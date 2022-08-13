@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta property="og:type" content="website" />
+  
+  <title>Portfolio | Pragati Kumari</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./loader.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/cursor.png" />
+</head>
+<body>
+
+    <!-----------------------
+            LOADER
+    -------------------- -->
+
+  <div class="loader" id="loader">
+    <div class='body'>
+      <span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class='base'>
+        <span></span>
+        <div class='face'></div>
+      </div>
+    </div>
+    <div class='longfazers'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Loading</h1>
+  </div>
+
+
+
+
+  
+  <!-----------------------
+            HEADER
+    -------------------- -->
+
+  <section class="header" id="header">
+    <strong><a class="logo">SushainG</a></strong>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link active" name="home">Home</a></li>
+        <li><a class="navbar-link" name="skills">Skills</a></li>
+        
+        <li><a class="navbar-link" name="education">Education</a></li>
+        <li><a name="contact" class="navbar-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
+  </section>
+
+
+  <!-----------------------
+          MAIN SECTION
+    -------------------- -->
+
+
+
+                          <!-----------------------
+                                  HOME SECTION
+                            -------------------- -->
+
+  
+  <section class="container" id="home">    
+    <div class="left-home-div">
+      <div>
+        <p class="profile-txt">Hey <img src="./assets/hello.gif" class="hello-img">,</br> 
+          I'm
+          <span class="my-name">Pragati Kumari</span></br>
+          <span>And I am into Web Development!</span>
+          <p class="aboutme">I have recently started my journey as a Web Developer. Web Development has<br>
+          been into my interest  and am currently focusing  on MERN Development!<br>
+          Besides this focusing on problem solving skills in Data Structures and Algorithms.</p>
+        </p>
+        
+      </div>
+  
+      <div class="social-menu">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/pragati1157/"><i class="fab fa-linkedin-in"></i></a></li>
+
+          <li><a href="https://github.com/Pragati1419"><i class="fab fa-github"></i></i></a></li>
+
+         
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-home-div">
+      <img src="./assets\profile.jpeg" class="profile-img">
+      
+
+    </div>
+  </section>
+
+
+                        <!-----------------------
+                            SKILLS SECTIONS
+                        -------------------- -->
+
+
+    <section class="container" id="skills">
+      <div class="section-heading skill-heading"><p>Skills</p></div>
+        <div class="skill-div">
+          <div class="first-col">
+            <div><img src="./assets/html.png"><p>HTML5</p></div>
+            <div><img src="./assets/css-3.png"><p>CSS3</b></p></div>
+            <div><img src="./assets/js.png"><p>JavaScript</p></div>
+            
+          </div>
+          <div class="second-col">
+            
+            <div><img src="./assets\c++.png"><p>C++</p></div>
+            <div><img src="./assets/github.png"><p>Github</p></div>
+          </div>
+      </div>
+    </section>
+
+
+
+
+
+                        <!-----------------------
+                            EDUCATION SECTIONS
+                        -------------------- -->
+
+
+    <section class="container" id="education">
+      <div class="section-heading edu-heading"><p>Education</p></div>
+
+        <div class="edu-div">   
+          <div class="edu-subdiv">
+            
+            <div>
+              <p>B.Tech Civil Engineering | National Institute of Technology Agartala, India.</p>
+              
+              <p class="default-status persuing">Pursuing 2020-2024</p>
+            </div>
+          </div>
+
+          <div class="edu-subdiv">
+            
+            <div>
+              <p>HSC | Jawahar Navodaya Vidyalaya Jamui Bihar, India.</p>
+              <p class="default-status">Completed 2012-2019</p>
+            </div>
+          </div>
+
+          
+    </section>
+
+  
+    
+  
+                    
+
+
+                        <!-----------------------
+                            CONTACT SECTIONS
+                        -------------------- -->
+
+    <section class="container" id="contact">
+      <div id="snackbar">Mmm...</div>
+
+      <div class="contact-div">
+          <div class="contact-img-div">          
+            <div class="contact-img-div">
+              <img class="contact-img" src=".\assets\contact.png">
+            </div>
+          </div>
+
+          <div class="mail-div">
+            <div class="mail-form">
+              <form id="myform">
+                <div class="user-box">
+                  <input type="text" id="name" onchange="checkName()" required>
+                  <label>Your Name*</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="email" onchange="checkEmail()" required>
+                  <label>Email Address*</label>
+                </div>
+                <div class="user-box">
+                  <textarea id="message" onchange="checkMessage()" required></textarea>
+                  <label>Enter your message*</label>
+                </div>
+                <a id="submit">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+                </a>
+              </form>
+              <p id="nameError" class ="errorMessage top-arrow">Cannot remain empty</p>
+              <p id="emailError" class ="errorMessage top-arrow">Invalid Email Address</p>
+              <p id="messageError" class ="errorMessage top-arrow">Cannot remain empty</p>
+            </div>
+            <div class="social-menu">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/pragati1157"><i class="fab fa-linkedin-in"></i></a></li>
+      
+                <li><a href="https://github.com/Pragati1419"><i class="fab fa-github"></i></i></a></li>
+      
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+                            <!-----------------------
+                                    SCRIPT
+                            -------------------- -->
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+  </body>
+</html>
